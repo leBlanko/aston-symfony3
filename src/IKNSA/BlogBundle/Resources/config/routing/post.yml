@@ -1,0 +1,34 @@
+post_index:
+    path:     /post/
+    defaults: { _controller: "IKNSABlogBundle:Post:index" }
+    methods:  GET
+
+api_post_index:
+    path:     /api/post/
+    defaults: { _controller: "IKNSABlogBundle:Post:apiIndex" }
+    methods:  GET
+
+post_show:
+    path:     /post/{id}/show
+    defaults: { _controller: "IKNSABlogBundle:Post:show" }
+    methods:  [GET, POST]
+
+api_post_show:
+    path:     api/post/{id}/show
+    defaults: { _controller: "IKNSABlogBundle:Post:apiShow" }
+    methods:  GET
+
+post_new:
+    path:     /post/new
+    defaults: { _controller: "IKNSABlogBundle:Post:new" }
+    methods:  [GET, POST]
+
+post_edit:
+    path:     /post/{id}/edit
+    defaults: { _controller: "IKNSABlogBundle:Post:edit" }
+    methods:  [GET, POST]
+
+post_delete:
+    path:     /post/{id}/delete
+    defaults: { _controller: "IKNSABlogBundle:Post:delete" }
+    methods:  DELETE

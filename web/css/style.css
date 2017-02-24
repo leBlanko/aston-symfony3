@@ -1,0 +1,17 @@
+.like-picture {
+  width:40px;
+  max-height:40px;
+  img : asset('uploads/pictures/like.png')
+}
+
+.dislike-picture {
+  width:70px;
+  max-height:70px;
+}
+
+.bodyStyle
+{
+  background-color:#ecf0f1;
+  border-radius:20px;
+  height:100%;
+}
